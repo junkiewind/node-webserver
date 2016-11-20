@@ -40,6 +40,13 @@ app.get('/', (req, res) => {
     welcomeMsg: 'Welcome to dynamic page',
   });
 });
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Portfolio',
+  });
+});
+
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'Dynamic content about page',
